@@ -1,1 +1,1 @@
-# Hralthcare-Management
+# Healthcare-Management
