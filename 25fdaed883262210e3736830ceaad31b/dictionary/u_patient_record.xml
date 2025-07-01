@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="1b5b3a9483a62210e3736830ceaad32b" max_length="40" name="u_patient_record" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="First Name" mandatory="true" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact" mandatory="true" max_length="40" name="u_contact" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Date Of Birth" mandatory="true" max_length="40" name="u_date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="u_gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Others" sequence="2" value="others"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Emergency Contact" mandatory="true" max_length="40" name="u_emergency_contact" type="phone_number_e164"/>
+    </element>
+</database>
