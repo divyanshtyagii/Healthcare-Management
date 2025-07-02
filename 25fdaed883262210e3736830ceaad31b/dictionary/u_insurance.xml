@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="18d76a2883e66210e3736830ceaad3fd" label="Insurance" max_length="40" name="u_insurance" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Coverage Details" mandatory="true" max_length="40" name="u_coverage_details" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Provider" mandatory="true" max_length="40" name="u_provider" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Policy Number" mandatory="true" max_length="40" name="u_policy_number" type="string"/>
+        <element attributes="encode_utf8=false" default="eac2835083e62210e3736830ceaad3e3" label="Patient Id" max_length="32" name="u_patient_id" read_only="true" reference="u_patient_record" type="reference"/>
+        <index name="index">
+            <element name="u_patient_id"/>
+        </index>
+    </element>
+</database>

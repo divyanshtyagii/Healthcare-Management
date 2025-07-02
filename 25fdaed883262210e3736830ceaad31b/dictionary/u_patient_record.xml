@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="1b5b3a9483a62210e3736830ceaad32b" max_length="40" name="u_patient_record" type="collection">
+    <element audit="true" db_object_id="1b5b3a9483a62210e3736830ceaad32b" label="Patient Record" max_length="40" name="u_patient_record" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="First Name" mandatory="true" max_length="40" name="u_first_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Last Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Contact" mandatory="true" max_length="40" name="u_contact" type="phone_number_e164"/>
