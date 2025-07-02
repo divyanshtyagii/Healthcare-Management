@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="e9cf325c83a62210e3736830ceaad3c7" label="Ward" max_length="40" name="u_ward" type="collection">
+        <element label="Capacity" mandatory="true" max_length="40" name="u_capacity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Ward Name" mandatory="true" max_length="40" name="u_ward_name" type="string"/>
+        <element label="Occupancy" mandatory="true" max_length="40" name="u_occupancy" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" mandatory="true" max_length="40" name="u_location" type="string"/>
+    </element>
+</database>
