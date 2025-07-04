@@ -6,5 +6,13 @@
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Location" mandatory="true" max_length="40" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="new" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="under maintenance" sequence="2" value="under maintenance"/>
+                <element inactive_on_update="false" label="closed" sequence="3" value="closed"/>
+            </choice>
+        </element>
     </element>
 </database>

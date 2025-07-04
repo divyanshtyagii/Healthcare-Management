@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="9f1f321c83a62210e3736830ceaad3ae" extends="task" label="Medication" max_length="40" name="u_medication" type="collection">
+    <element attributes="ignore_baseline=true" audit="true" db_object_id="9f1f321c83a62210e3736830ceaad3ae" extends="task" label="Medication" max_length="40" name="u_medication" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
         <element attributes="encode_utf8=false" default="eac2835083e62210e3736830ceaad3e3" label="Patient Id" max_length="32" name="u_patient_id" read_only="true" reference="u_patient_record" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Dosage" mandatory="true" max_length="1000" name="u_dosage" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="prescribed" sequence="1" value="prescribed"/>
+                <element inactive_on_update="false" label="completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="in progress" sequence="2" value="in progress"/>
+                <element inactive_on_update="false" label="new" sequence="0" value="new"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="medication name" max_length="40" name="u_medication_name" type="string"/>
         <element attributes="encode_utf8=false" default="49dd6220832a6210e3736830ceaad3b6" label="Doctor" max_length="32" name="u_doctor" read_only="true" reference="u_doctor" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Frequency" mandatory="true" max_length="40" name="u_frequency" type="string">

@@ -18,10 +18,11 @@
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
-                <element inactive_on_update="false" label="cancelled" sequence="1" value="cancelled"/>
-                <element inactive_on_update="false" label="completed" sequence="3" value="completed"/>
-                <element inactive_on_update="false" label="confirmed" sequence="2" value="confirmed"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="new" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="cancelled" sequence="2" value="cancelled"/>
+                <element inactive_on_update="false" label="completed" sequence="4" value="completed"/>
+                <element inactive_on_update="false" label="confirmed" sequence="3" value="confirmed"/>
             </choice>
         </element>
         <element attributes="encode_utf8=false" default="49dd6220832a6210e3736830ceaad3b6" label="Doctor" max_length="32" name="u_doctor" read_only="true" reference="u_doctor" type="reference"/>

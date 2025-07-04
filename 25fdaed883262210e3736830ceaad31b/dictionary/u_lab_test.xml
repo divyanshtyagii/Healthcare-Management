@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="d34f761c83a62210e3736830ceaad324" extends="task" label="Lab Test" max_length="40" name="u_lab_test" type="collection">
+    <element attributes="no_attachment=true" audit="true" db_object_id="d34f761c83a62210e3736830ceaad324" extends="task" label="Lab Test" max_length="40" name="u_lab_test" type="collection">
         <element attributes="encode_utf8=false" default="eac2835083e62210e3736830ceaad3e3" label="Patient Id" max_length="32" name="u_patient_id" read_only="true" reference="u_patient_record" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Scheduled Date" mandatory="true" max_length="40" name="u_scheduled_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Results" mandatory="true" max_length="1000" name="u_results" type="string"/>
@@ -10,11 +10,13 @@
                 <element inactive_on_update="false" label="X-Ray" sequence="0" value="x-ray"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Schdeduled" mandatory="true" max_length="40" name="u_scheduled" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Scheduled" label="Schdeduled" mandatory="true" max_length="40" name="u_scheduled" type="string">
             <choice>
-                <element inactive_on_update="false" label="Scheduled" sequence="2" value="scheduled"/>
-                <element inactive_on_update="false" label="completed" sequence="0" value="completed"/>
-                <element inactive_on_update="false" label="cancelled" sequence="1" value="cancelled"/>
+                <element inactive_on_update="false" label="in progress" sequence="2" value="in progress"/>
+                <element inactive_on_update="false" label="new" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="cancelled" sequence="4" value="cancelled"/>
             </choice>
         </element>
     </element>

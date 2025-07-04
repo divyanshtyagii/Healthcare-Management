@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="00eff25c83a62210e3736830ceaad3d8" label="Room" max_length="40" name="u_room" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="occupied" sequence="2" value="occupied"/>
+                <element inactive_on_update="false" label="under maintenance" sequence="3" value="under maintenance"/>
+                <element inactive_on_update="false" label="new" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="available" sequence="1" value="available"/>
+            </choice>
+        </element>
         <element attributes="encode_utf8=false" default="01b0a22083e66210e3736830ceaad313" label="Ward Id" max_length="32" name="u_ward_id" read_only="true" reference="u_ward" type="reference"/>
         <element label="Bed Count" mandatory="true" max_length="40" name="u_bed_count" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
-        <element attributes="edge_encryption_enabled=true" label="Room Number" max_length="40" name="u_room_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,dependent=ward_id" label="Room Number" max_length="40" name="u_room_number" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
         <element label="Occupied Bed" mandatory="true" max_length="40" name="u_occupied_bed" type="integer"/>
         <index name="index">

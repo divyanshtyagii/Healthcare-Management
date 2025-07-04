@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>question 7</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var grpr = new GlideRecord("u_patient_record");
+var patient_id = "PAT0000004";
+grpr.addQuery('u_number', patient_id);
+grpr.query();
+if (grpr.next()) {
+    var patientSysId = grpr.getUniqueValue();
+    var grbl = new GlideRecord('u_billing');
+    grbl.addQuery("u_patient_id", patientSysId);
+    grbl.query();
+    while (grbl.next()) {
+		gs.print('Billing ID: ' + grbl.getDisplayValue('u_number'));
+        gs.print('Total Amount: ' + grbl.getDisplayValue("u_total_amount"));
+        gs.print('---');
+    }
+} else {
+    gs.print('No patient found with ID '+_patientId);
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 06:00:30</sys_created_on>
+        <sys_id>a6cff3f48322e210e3736830ceaad304</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>question 7</sys_name>
+        <sys_package display_value="Healthcare Management application" source="25fdaed883262210e3736830ceaad31b">25fdaed883262210e3736830ceaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management application">25fdaed883262210e3736830ceaad31b</sys_scope>
+        <sys_update_name>sys_script_fix_a6cff3f48322e210e3736830ceaad304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 06:00:59</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a6cff3f48322e210e3736830ceaad304</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 06:00:30</sys_created_on>
+        <sys_id>eaef7bf48322e210e3736830ceaad34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 06:00:30</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
