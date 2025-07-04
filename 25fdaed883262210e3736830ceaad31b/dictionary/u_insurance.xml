@@ -6,6 +6,13 @@
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Policy Number" mandatory="true" max_length="40" name="u_policy_number" type="string"/>
         <element attributes="encode_utf8=false" default="eac2835083e62210e3736830ceaad3e3" label="Patient Id" max_length="32" name="u_patient_id" read_only="true" reference="u_patient_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="new" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="expired" sequence="2" value="expired"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="u_patient_id"/>
         </index>

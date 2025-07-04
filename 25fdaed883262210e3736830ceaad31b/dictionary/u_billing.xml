@@ -2,11 +2,12 @@
     <element audit="true" db_object_id="a7000b5c83a62210e3736830ceaad327" label="Billing" max_length="40" name="u_billing" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
         <element attributes="omit_sys_original=true" label="Total Amount" mandatory="true" max_length="20" name="u_total_amount" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="new" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="pending" sequence="0" value="pending"/>
-                <element inactive_on_update="false" label="paid" sequence="1" value="paid"/>
-                <element inactive_on_update="false" label="overdue" sequence="2" value="overdue"/>
+                <element inactive_on_update="false" label="pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="paid" sequence="2" value="paid"/>
+                <element inactive_on_update="false" label="overdue" sequence="3" value="overdue"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>
         <element attributes="encode_utf8=false" default="72dea660832a6210e3736830ceaad378" label="Appointment Id" max_length="32" name="u_appointment_id" read_only="true" reference="u_appointment" type="reference"/>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="PERSONAL INFORMATION" section_id="e6a83e6c832a6210e3736830ceaad3a9" sys_domain="global" table="u_patient_record" version="3" view="Staff_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 06:10:45</sys_created_on>
+            <sys_id>b2a83e6c832a6210e3736830ceaad3d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="PERSONAL INFORMATION" display_value="PERSONAL INFORMATION" name="u_patient_record" sys_domain="global" view="aaa8fa6c832a6210e3736830ceaad3f5">e6a83e6c832a6210e3736830ceaad3a9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 06:10:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_first_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 06:10:45</sys_created_on>
+            <sys_id>3aa83e6c832a6210e3736830ceaad3d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="PERSONAL INFORMATION" display_value="PERSONAL INFORMATION" name="u_patient_record" sys_domain="global" view="aaa8fa6c832a6210e3736830ceaad3f5">e6a83e6c832a6210e3736830ceaad3a9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 06:10:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_last_name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 06:10:45</sys_created_on>
+            <sys_id>bea83e6c832a6210e3736830ceaad3d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="PERSONAL INFORMATION" display_value="PERSONAL INFORMATION" name="u_patient_record" sys_domain="global" view="aaa8fa6c832a6210e3736830ceaad3f5">e6a83e6c832a6210e3736830ceaad3a9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 06:10:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_date_of_birth</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 06:10:45</sys_created_on>
+            <sys_id>36a83e6c832a6210e3736830ceaad3d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="PERSONAL INFORMATION" display_value="PERSONAL INFORMATION" name="u_patient_record" sys_domain="global" view="aaa8fa6c832a6210e3736830ceaad3f5">e6a83e6c832a6210e3736830ceaad3a9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 06:10:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_gender</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 06:10:45</sys_created_on>
+            <sys_id>baa83e6c832a6210e3736830ceaad3d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="PERSONAL INFORMATION" display_value="PERSONAL INFORMATION" name="u_patient_record" sys_domain="global" view="aaa8fa6c832a6210e3736830ceaad3f5">e6a83e6c832a6210e3736830ceaad3a9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 06:10:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 06:10:45</sys_created_on>
+            <sys_id>32a83e6c832a6210e3736830ceaad3d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="PERSONAL INFORMATION" display_value="PERSONAL INFORMATION" name="u_patient_record" sys_domain="global" view="aaa8fa6c832a6210e3736830ceaad3f5">e6a83e6c832a6210e3736830ceaad3a9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 06:10:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>PERSONAL INFORMATION</caption>
+            <header>false</header>
+            <name>u_patient_record</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 06:10:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6a83e6c832a6210e3736830ceaad3a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_patient_record</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Healthcare Management application" source="25fdaed883262210e3736830ceaad31b">25fdaed883262210e3736830ceaad31b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Healthcare Management application">25fdaed883262210e3736830ceaad31b</sys_scope>
+            <sys_update_name>sys_ui_section_e6a83e6c832a6210e3736830ceaad3a9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 06:10:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Staff View" name="Staff_View">aaa8fa6c832a6210e3736830ceaad3f5</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
