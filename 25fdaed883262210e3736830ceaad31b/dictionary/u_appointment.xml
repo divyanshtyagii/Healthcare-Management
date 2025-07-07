@@ -8,7 +8,7 @@
                 <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
             </choice>
         </element>
-        <element attributes="encode_utf8=false" default="eac2835083e62210e3736830ceaad3e3" label="Patient Id" max_length="32" name="u_patient_id" read_only="true" reference="u_patient_record" type="reference"/>
+        <element attributes="encode_utf8=false" label="Patient Id" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string">
             <choice>
                 <element inactive_on_update="false" label="cardio" sequence="1" value="cardio"/>
@@ -25,6 +25,6 @@
                 <element inactive_on_update="false" label="confirmed" sequence="3" value="confirmed"/>
             </choice>
         </element>
-        <element attributes="encode_utf8=false" default="49dd6220832a6210e3736830ceaad3b6" label="Doctor" max_length="32" name="u_doctor" read_only="true" reference="u_doctor" type="reference"/>
+        <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_doctor" reference="u_doctor" type="reference"/>
     </element>
 </database>
