@@ -5,6 +5,13 @@
         <element attributes="edge_encryption_enabled=true" label="Last Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Contact" mandatory="true" max_length="40" name="u_contact" type="phone_number_e164"/>
         <element attributes="edge_encryption_enabled=true" label="Date Of Birth" mandatory="true" max_length="40" name="u_date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="u_priority" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
@@ -23,5 +30,6 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Emergency Contact" mandatory="true" max_length="40" name="u_emergency_contact" type="phone_number_e164"/>
+        <element default="true" label="VIP" max_length="40" name="u_vip" type="boolean"/>
     </element>
 </database>
