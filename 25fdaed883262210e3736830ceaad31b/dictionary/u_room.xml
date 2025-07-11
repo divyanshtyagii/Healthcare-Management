@@ -8,7 +8,7 @@
                 <element inactive_on_update="false" label="available" sequence="1" value="available"/>
             </choice>
         </element>
-        <element attributes="encode_utf8=false" default="01b0a22083e66210e3736830ceaad313" label="Ward Id" max_length="32" name="u_ward_id" read_only="true" reference="u_ward" type="reference"/>
+        <element attributes="encode_utf8=false" label="Ward Id" max_length="32" name="u_ward_id" reference="u_ward" type="reference"/>
         <element label="Bed Count" mandatory="true" max_length="40" name="u_bed_count" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
         <element attributes="edge_encryption_enabled=true,dependent=ward_id" label="Room Number" max_length="40" name="u_room_number" type="string"/>

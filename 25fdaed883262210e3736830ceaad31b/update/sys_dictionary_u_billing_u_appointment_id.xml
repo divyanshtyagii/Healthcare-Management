@@ -11,7 +11,7 @@
         <column_label>Appointment Id</column_label>
         <comments/>
         <create_roles/>
-        <default_value>72dea660832a6210e3736830ceaad378</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -33,7 +33,7 @@
         <name>u_billing</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <reference display_value="" name="u_appointment">u_appointment</reference>
         <reference_cascade_rule/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Healthcare Management application">25fdaed883262210e3736830ceaad31b</sys_scope>
         <sys_update_name>sys_dictionary_u_billing_u_appointment_id</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-02 05:36:02</sys_updated_on>
+        <sys_updated_on>2025-07-08 19:09:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
