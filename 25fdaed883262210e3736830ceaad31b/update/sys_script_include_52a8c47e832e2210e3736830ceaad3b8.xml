@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.PatientUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>PatientUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var PatientUtils = Class.create();
+PatientUtils.prototype = {
+    initialize: function() {},
+
+    fetchDetails: function(id) {
+        var gr = new GlideRecord('u_patient');
+        if (gr.get(patientId)) {
+            return gr;
+        }
+        return null;
+
+    },
+
+    isVIP: function(sysId) {
+        var gr = new GlideRecord('u_patient_record');
+        if (gr.get(sysId)) {
+            return gr.u_vip == true || gr.u_vip == 'true';
+        }
+        return false;
+    },
+
+    calculateAge: function(id){
+        var gr = new GlideRecord("u_patient_record");
+        gr.get(id);
+        var dob = new GlideDateTime(gr.u_date_of_birth);
+        var today = new GlideDateTime();
+ 
+        var diffMillis = today.getNumericValue() - dob.getNumericValue();
+        var millisInYear = 1000 * 60 * 60 * 24 * 365.25;
+ 
+        return Math.floor(diffMillis / millisInYear);
+    },
+
+getAppointments: function(patientNumber) {
+    var patientGR = new GlideRecord('u_patient_record');
+    patientGR.addQuery('u_number', patientNumber);
+    patientGR.query();
+
+    if (patientGR.next()) {
+        var patientSysId = patientGR.getUniqueValue();
+
+        var appointGR = new GlideRecord('u_appointment');
+        appointGR.addQuery('u_patient_id', patientSysId);
+        appointGR.query();
+
+        var results = [];
+
+        while (appointGR.next()) {
+            results.push(appointGR.getDisplayValue()); 
+		}
+
+        return results;
+    }
+    return []; 
+},
+getMedications: function(patientNumber) {
+    var patientGR = new GlideRecord('u_patient_record');
+    patientGR.addQuery('u_number', patientNumber);
+    patientGR.query();
+
+    if (patientGR.next()) {
+        var patientSysId = patientGR.getUniqueValue();
+
+        var medGR = new GlideRecord('u_medication');
+        medGR.addQuery('u_patient_id', patientSysId);
+        medGR.query();
+
+        var results = [];
+
+        while (medGR.next()) {
+            results.push(medGR.getDisplayValue()); 
+        }
+
+        return results;
+    }
+
+    return []; 
+},
+
+getLabTests: function(patientNumber) {
+    var patientGR = new GlideRecord('u_patient_record');
+    patientGR.addQuery('u_number', patientNumber);
+    patientGR.query();
+
+    if (patientGR.next()) {
+        var patientSysId = patientGR.getUniqueValue();
+
+        var labGR = new GlideRecord('u_lab_test');
+        labGR.addQuery('u_patient_id', patientSysId);
+        labGR.query();
+
+        var results = [];
+
+        while (labGR.next()) {
+            results.push(labGR.getDisplayValue());
+        }
+
+        return results;
+    }
+
+    return [];
+},
+getBillingRecords: function(patientNumber) {
+    var patientGR = new GlideRecord('u_patient_record');
+    patientGR.addQuery('u_number', patientNumber);
+    patientGR.query();
+
+    if (patientGR.next()) {
+        var patientSysId = patientGR.getUniqueValue();
+
+        var billingGR = new GlideRecord('u_billing');
+        billingGR.addQuery('u_patient_id', patientSysId);
+        billingGR.query();
+
+        var results = [];
+
+        while (billingGR.next()) {
+            results.push(billingGR.getDisplayValue());
+        }
+
+        return results;
+    }
+
+    return [];
+},
+
+getInsurancePolicies: function(patientNumber) {
+    var patientGR = new GlideRecord('u_patient_record');
+    patientGR.addQuery('u_number', patientNumber);
+    patientGR.query();
+
+    if (patientGR.next()) {
+        var patientSysId = patientGR.getUniqueValue();
+
+        var insuranceGR = new GlideRecord('u_insurance');
+        insuranceGR.addQuery('u_patient_id', patientSysId);
+        insuranceGR.query();
+
+        var results = [];
+
+        while (insuranceGR.next()) {
+            results.push(insuranceGR.getDisplayValue());
+		}
+
+        return results;
+    }
+
+    return [];
+},
+
+
+type:'PatientUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 17:08:40</sys_created_on>
+        <sys_id>52a8c47e832e2210e3736830ceaad3b8</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>PatientUtils</sys_name>
+        <sys_package display_value="Healthcare Management application" source="25fdaed883262210e3736830ceaad31b">25fdaed883262210e3736830ceaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management application">25fdaed883262210e3736830ceaad31b</sys_scope>
+        <sys_update_name>sys_script_include_52a8c47e832e2210e3736830ceaad3b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 18:13:32</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>52a8c47e832e2210e3736830ceaad3b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 17:08:39</sys_created_on>
+        <sys_id>e2c80cfe832e2210e3736830ceaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 17:08:39</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
