@@ -19,6 +19,25 @@
             <dependent_value/>
             <element>u_frequency</element>
             <hint/>
+            <inactive>false</inactive>
+            <label>Once</label>
+            <language>en</language>
+            <name>u_medication</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 04:28:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 04:28:34</sys_updated_on>
+            <value>once</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_frequency</element>
+            <hint/>
             <inactive>true</inactive>
             <label>Once Daily</label>
             <language>en</language>
@@ -38,6 +57,25 @@
             <dependent_value/>
             <element>u_frequency</element>
             <hint/>
+            <inactive>false</inactive>
+            <label>Twice</label>
+            <language>en</language>
+            <name>u_medication</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 04:28:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 04:28:34</sys_updated_on>
+            <value>twice</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_frequency</element>
+            <hint/>
             <inactive>true</inactive>
             <label>Twice Daily</label>
             <language>en</language>
@@ -52,6 +90,25 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-07-07 12:35:59</sys_updated_on>
             <value>twice daily</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_frequency</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Thrice</label>
+            <language>en</language>
+            <name>u_medication</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 04:28:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 04:28:34</sys_updated_on>
+            <value>thrice</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

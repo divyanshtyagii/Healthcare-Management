@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="no_attachment=true" audit="true" db_object_id="d34f761c83a62210e3736830ceaad324" extends="task" label="Lab Test" max_length="40" name="u_lab_test" type="collection">
-        <element attributes="encode_utf8=false" default="eac2835083e62210e3736830ceaad3e3" label="Patient Id" max_length="32" name="u_patient_id" read_only="true" reference="u_patient_record" type="reference"/>
+        <element active="false" attributes="encode_utf8=false" label="patient id" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Scheduled Date" mandatory="true" max_length="40" name="u_scheduled_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Results" mandatory="true" max_length="1000" name="u_results" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Test Type" mandatory="true" max_length="40" name="u_test_type" type="string">

@@ -15,6 +15,15 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="medication name" max_length="40" name="u_medication_name" type="string"/>
         <element attributes="encode_utf8=false" default="49dd6220832a6210e3736830ceaad3b6" label="Doctor" max_length="32" name="u_doctor" read_only="true" reference="u_doctor" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Frequency" max_length="40" name="u_frequency" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Frequency" max_length="40" name="u_frequency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Once" sequence="0" value="once"/>
+                <element inactive_on_update="false" label="Thrice" sequence="2" value="thrice"/>
+                <element inactive_on_update="false" label="Twice" sequence="1" value="twice"/>
+                <element inactive="true" inactive_on_update="true" label="Once Daily" sequence="0" value="once daily"/>
+                <element inactive="true" inactive_on_update="true" label="Twice Daily" sequence="1" value="twice daily"/>
+                <element inactive="true" inactive_on_update="true" label="Thrice Daily" sequence="2" value="thrice daily"/>
+            </choice>
+        </element>
     </element>
 </database>
