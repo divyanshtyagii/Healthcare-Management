@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="u_ward" version="2" view="Mobile">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_number</element>
+            <list_id display_value="u_ward" element="NULL" name="u_ward" parent="NULL" relationship="NULL" sys_domain="global" view="5e05e0735d3122104f34969735a7ad33">d315e2ec83a66210e3736830ceaad336</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 04:45:18</sys_created_on>
+            <sys_id>1f15266483e66210e3736830ceaad3eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 04:45:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_capacity</element>
+            <list_id display_value="u_ward" element="NULL" name="u_ward" parent="NULL" relationship="NULL" sys_domain="global" view="5e05e0735d3122104f34969735a7ad33">d315e2ec83a66210e3736830ceaad336</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 04:45:18</sys_created_on>
+            <sys_id>9315266483e66210e3736830ceaad3ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 04:45:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_location</element>
+            <list_id display_value="u_ward" element="NULL" name="u_ward" parent="NULL" relationship="NULL" sys_domain="global" view="5e05e0735d3122104f34969735a7ad33">d315e2ec83a66210e3736830ceaad336</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 04:45:18</sys_created_on>
+            <sys_id>1715266483e66210e3736830ceaad3ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 04:45:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_occupancy</element>
+            <list_id display_value="u_ward" element="NULL" name="u_ward" parent="NULL" relationship="NULL" sys_domain="global" view="5e05e0735d3122104f34969735a7ad33">d315e2ec83a66210e3736830ceaad336</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 04:45:18</sys_created_on>
+            <sys_id>9715266483e66210e3736830ceaad3ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 04:45:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_ward_name</element>
+            <list_id display_value="u_ward" element="NULL" name="u_ward" parent="NULL" relationship="NULL" sys_domain="global" view="5e05e0735d3122104f34969735a7ad33">d315e2ec83a66210e3736830ceaad336</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 04:45:18</sys_created_on>
+            <sys_id>1b15266483e66210e3736830ceaad3ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 04:45:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_work_notes</element>
+            <list_id display_value="u_ward" element="NULL" name="u_ward" parent="NULL" relationship="NULL" sys_domain="global" view="5e05e0735d3122104f34969735a7ad33">d315e2ec83a66210e3736830ceaad336</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 04:45:18</sys_created_on>
+            <sys_id>9b15266483e66210e3736830ceaad3ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 04:45:18</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>u_ward</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 04:45:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d315e2ec83a66210e3736830ceaad336</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_ward</sys_name>
+            <sys_package display_value="Healthcare Management application" source="25fdaed883262210e3736830ceaad31b">25fdaed883262210e3736830ceaad31b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Healthcare Management application">25fdaed883262210e3736830ceaad31b</sys_scope>
+            <sys_update_name>sys_ui_list_u_ward_Mobile</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 04:45:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Mobile" name="Mobile">5e05e0735d3122104f34969735a7ad33</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
